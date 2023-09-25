@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script to specify a file path
+
+ssh -i ~/.ssh/school ubuntu@54.90.30.64
