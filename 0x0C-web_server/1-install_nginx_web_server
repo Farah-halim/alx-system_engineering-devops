@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# script to travel
-
-sudo apt-get update
-sudo apt-get -y install nginx
-sudo ufw app list
-sudo ufw allow 'Nginx HTTP'
-sudo echo 'Hello World!' > /var/www/html/index.html
-sudo service nginx start
