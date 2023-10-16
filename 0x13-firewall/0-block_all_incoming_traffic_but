@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# configures the firewall to only accept traffic
+# through ports 22, 443 and 80.
+
+sudo apt install ufw
+sed -i "s/IPV6=.*/IPV6=yes/" /etc/default/ufw
+ufw enable
+ufw default deny incoming
+ufw default allow outcoming
+ufw allow 22/tcp && ufw allow 443/tcp && ufw allow 80/tcp
